@@ -5,6 +5,7 @@ import AllOrders from "./allOrders";
 import Pending from "./pending";
 import SignOut from "./SignOut";
 import Complains from "./Complains";
+import Login from "./login";
 class Body extends Component {
     render() {
         return (
@@ -19,7 +20,7 @@ class Body extends Component {
                                 <Link className="nav-link link border-bottom text-dark" to="/SignOut"> <li className="p-2  d-flex justify-content-between align-items-center">SignOut </li></Link>
                         </div>
                         <div className="col-sm-10 my-2 ">
-                            <Route exact path="/" component={Dashboard} />
+                            <Route exact path="/dashboard" component={Dashboard} />
                             <Route exact path="/orders" component={AllOrders} />
                             <Route exact path="/Pending" component={Pending} />
                             <Route exact path="/Complains" component={Complains} />
